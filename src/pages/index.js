@@ -13,18 +13,6 @@ export default ({ data }) => {
     <PageLayout>
       <SEO title="Home" />
       <Container className="text-center pt-5 mt-5" fluid>
-        <Image
-          width="150"
-          height="150"
-          fluid
-          src={dark ? `../../icons/darth-vader.png` : `../../icons/r2-d2.png`}
-          alt={dark ? "Darth Vader" : "R2-D2"}
-        />
-        {unemployed && (
-          <p className="mt-2">
-            <b> Hey! I am looking for new opportunities :)</b>
-          </p>
-        )}
         <Container className="py-0 my-0">
           <h1
             style={{
@@ -32,31 +20,19 @@ export default ({ data }) => {
               color: "black",
             }}
           >
-            <span className="first-name">{firstName}</span>&nbsp;
-            <span className="last-name">{lastName}</span>
+            <span className="first-name">Patrick</span>&nbsp;
+            <span className="last-name">Carland</span>
           </h1>
           <p>
             <i>
-              {occupation} by day,&nbsp;
-              {dark ? `Imperial enforcer by night` : `Rebel scum by night`}
+              Tagline goes here.
             </i>
           </p>
         </Container>
         <hr className="my-3 w-25" />
         <div className="d-md-inline-flex icons-container">
           <a
-            href="https://www.github.com"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FontAwesomeIcon
-              icon={["fab", "github"]}
-              className="icons github"
-              title="Github"
-            />
-          </a>
-          <a
-            href="https://linkedin.com"
+            href="https://linkedin.com/in/patrickcarland"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -66,30 +42,20 @@ export default ({ data }) => {
               title="LinkedIn"
             />
           </a>
+
           <a
-            href="https://www.freecodecamp.org"
+            href="https://twitter.com/patrickcarland"
             target="_blank"
             rel="noopener noreferrer"
           >
             <FontAwesomeIcon
-              icon={["fab", "free-code-camp"]}
-              className="icons fcc"
-              title="FreeCodeCamp"
+              icon={["fab", "twitter"]}
+              className="icons twitter"
+              title="Twitter"
             />
           </a>
           <a
-            href="https://www.hackerrank.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FontAwesomeIcon
-              icon={["fab", "hackerrank"]}
-              className="icons hr"
-              title="Hackerrank"
-            />
-          </a>
-          <a
-            href="mailto:johndoe@gmail.com"
+            href="mailto:patrickcarland@gmail.com"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -97,13 +63,6 @@ export default ({ data }) => {
               icon={["fas", "envelope"]}
               className="icons mail"
               title="e-mail"
-            />
-          </a>
-          <a href="../../resume.pdf" target="_blank" download>
-            <FontAwesomeIcon
-              icon={["fas", "file-alt"]}
-              className="icons file"
-              title="Resume"
             />
           </a>
         </div>
